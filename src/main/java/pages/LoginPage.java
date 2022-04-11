@@ -31,6 +31,13 @@ public class LoginPage {
 
 	public void clickSignInButton() {
 		SignInButton.click();
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+			e.getCause();
+			e.getMessage();
+		}
 	}
 
 	public String getPageTitle() {
